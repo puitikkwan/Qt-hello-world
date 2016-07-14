@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>494</width>
+    <height>322</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>190</y>
+      <width>311</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout"/>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>250</y>
+      <width>331</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QPlainTextEdit" name="plainTextEdit">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>100</y>
+      <width>104</width>
+      <height>85</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>494</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuP2">
+    <property name="title">
+     <string>P2</string>
+    </property>
+    <addaction name="actionP1"/>
+    <addaction name="actionP2"/>
+    <addaction name="actionP3"/>
+    <addaction name="actionSfsf"/>
+   </widget>
+   <widget class="QMenu" name="menuQlist">
+    <property name="title">
+     <string>qlist</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="actionQqlist"/>
+    <addaction name="actionAc"/>
+   </widget>
+   <addaction name="menuP2"/>
+   <addaction name="menuQlist"/>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionP1"/>
+   <addaction name="actionQqlist"/>
+   <addaction name="actionP3"/>
+   <addaction name="actionSfsf"/>
+   <addaction name="actionAc"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionP1">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="myresources.qrc">
+     <normaloff>:/Images/10.png</normaloff>:/Images/10.png</iconset>
+   </property>
+   <property name="text">
+    <string>Hello World</string>
+   </property>
+  </action>
+  <action name="actionP2">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset theme="black">
+     <normaloff>15.jpg</normaloff>15.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>Login Window</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>MS PGothic</family>
+     <italic>true</italic>
+    </font>
+   </property>
+   <property name="visible">
+    <bool>true</bool>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="actionP3">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="myresources.qrc">
+     <normaloff>:/Images/16.jpg</normaloff>:/Images/16.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>P3</string>
+   </property>
+   <property name="toolTip">
+    <string>P3</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="visible">
+    <bool>false</bool>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>false</bool>
+   </property>
+  </action>
+  <action name="actionQqlist">
+   <property name="icon">
+    <iconset resource="myresources.qrc">
+     <normaloff>:/Images/8.png</normaloff>:/Images/8.png</iconset>
+   </property>
+   <property name="text">
+    <string>qqlist</string>
+   </property>
+  </action>
+  <action name="actionAc">
+   <property name="text">
+    <string>Ac</string>
+   </property>
+  </action>
+  <action name="actionSfsf">
+   <property name="text">
+    <string>sfsf</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="myresources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
